@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CPU Scheduling Algorithms</h1>
+        
+        <!-- Algorithm Selection Buttons -->
+        <div id="algorithmSelection">
+            <button class="algorithmBtn" data-algorithm="fcfs">FCFS</button>
+            <button class="algorithmBtn" data-algorithm="sjfNonPreemptive">Non-Preemptive SJF</button>
+            <button class="algorithmBtn" data-algorithm="sjfPreemptive">Preemptive SJF</button>
+            <button class="algorithmBtn" data-algorithm="priorityNonPreemptive">Non-Preemptive Priority</button>
+            <button class="algorithmBtn" data-algorithm="priorityPreemptive">Preemptive Priority</button>
+            <button class="algorithmBtn" data-algorithm="roundRobin">Round Robin</button>
+        </div>
+
+        <!-- Input Form for Process Details -->
+        <div id="inputForm" class="hidden">
+            <h2 id="algorithmTitle">Enter Process Details for <span id="algorithmName"></span></h2>
+            <form id="processForm">
+                <label for="arrivalTime">Arrival Time:</label>
+                <input type="number" id="arrivalTime" name="arrivalTime" required><br>
+
+                <label for="burstTime">Burst Time:</label>
+                <input type="number" id="burstTime" name="burstTime" required><br>
+
+                <!-- Priority Field for Priority Scheduling -->
+                <div id="priorityField" class="hidden">
+                    <label for="priority">Priority:</label>
+                    <input type="number" id="priority" name="priority"><br>
+                </div>
+
+                <!-- Time Quantum Field for Round Robin Scheduling -->
+                <div id="timeQuantumField" class="hidden">
+                    <label for="timeQuantum">Time Quantum:</label>
+                    <input type="number" id="timeQuantum" name="timeQuantum"><br>
+                </div>
+
+                <button type="button" id="addProcessBtn">Add Process</button>
+                <button type="button" id="generateBtn">Generate Gantt Chart</button>
+            </form>
+        </div>
+
+        <!-- Table to Display Added Processes -->
+        <div id="processTable" class="hidden">
+            <h3>Processes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process ID</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Priority</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="processList"></tbody>
+            </table>
+        </div>
+
+        <!-- Gantt Chart Section -->
+        <div id="ganttChart" class="hidden">
+            <h3>Gantt Chart</h3>
+            <canvas id="ganttCanvas" width="600" height="150"></canvas>
+        </div>
+
+        <!-- Performance Metrics Table -->
+        <div id="metrics" class="hidden">
+            <h3>Performance Metrics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process ID</th>
+                        <th>Arivval Time</th>
+                        <th>Burst Time</th>
+                      <th>Completion Time</th>
+                      <th>Turnaround Time</th>
+                      <th>Waiting Time</th>
+                      <th>Response Time</th>
+                      
+                    </tr>
+                </thead>
+                <tbody id="results"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

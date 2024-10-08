@@ -1,0 +1,170 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdb3e4;
+    margin: 0;
+    padding: 0;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdb3e4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.algorithmBtn {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #4f3064;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.algorithmBtn:hover {
+    background-color: #4cae4c;
+}
+
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.removeBtn {
+    background-color: #d9534f;
+}
+
+.removeBtn:hover {
+    background-color: #c9302c;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.algorithmBtn {
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #4f3064;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.algorithmBtn:hover {
+    background-color: #4cae4c;
+}
+
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.removeBtn {
+    background-color: #d9534f;
+}
+
+.removeBtn:hover {
+    background-color: #c9302c;
+}
